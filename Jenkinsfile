@@ -18,7 +18,7 @@ node {
 	    }
         stage('Nexus Repository'){	
 
-	    nexusArtifactUploader artifacts: [[artifactId: 'sample_iOS', classifier: '', file: '/var/lib/jenkins/workspace/Newios/Sample_iOS.ipa', type: 'ipa']], credentialsId: 'bcebae3d-4df0-4fb2-8ca4-6ee8af37cabb', groupId: 'com.ios.devops', nexusUrl: 'localhost:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'devopsmobility', version: '6.0'
+	    nexusArtifactUploader artifacts: [[artifactId: 'sample_iOS', classifier: '', file: '/var/lib/jenkins/workspace/Newios/Sample_iOS.ipa', type: 'ipa']], credentialsId: 'bcebae3d-4df0-4fb2-8ca4-6ee8af37cabb', groupId: 'com.ios.devops', nexusUrl: 'localhost:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'devopsmobility', version: '7.0'
 
 	}    
  }
